@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Comprensión Lectora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="titleInit">Test Número 5</Nav></h2>
+        <p id="paragraphInit">
+            Este test busca medir tu velocidad y comprensión
+            lectora.<br>
+            Te recomendamos que lo hagas en un ambiente
+            calmado, sin distracciones y con buena iluminación.<br>
+            Esta lectura la debes hacer basado en las técnicas
+            que ya hayas empezado a usar. En las primeras
+            semanas, no debes preocuparte mucho por la
+            comprensión lectora, ya que ese es un proceso que se
+            va a ir dando paulatinamente.<br>
+            Cuando des clic en INICIAR se te presentará la lectura
+            y el sistema llevará un cronómetro que medirá tu
+            velocidad. Al finalzar de leer todo el texto debes dar
+            clic en el botón TERMINAR.<br>
+        </p>
+        <button id="startButton">Iniciar</button>
+        <div id="textContainer" class="hidden">
+            <p id="textToRead">
+                Tenía hambre, mamá no estaba y decidí ir en busca de galletitas. Tomé la lata donde siempre están bien guardadas y ahí la vi. Había una sola, muy sola dentro de esa lata que en ese momento parecía inmensa.
+                <br><br>
+                "La última galletita de la lata" -pensé en voz alta y en ese momento, recordé que ésa era una frase que solía usar mi abuela.
+                <br><br>
+                Como era una frase que le escuché decir más de una vez, sabía a qué se refería mi abuela porque se lo había preguntado.
+                <br><br>
+                La última galletita de la lata eran –según mi abuela– las personas que parecían olvidadas, a quienes no se les prestaba tanta atención, las que eran escuchadas en última instancia y no en primer lugar.
+                <br><br>
+                Ahí fue cuando pensé que yo, teniendo dos hermanos menores, también a veces me sentía de ese modo.
+                <br><br>
+                Siempre tengo que esperar, porque lloran, porque hay que cambiarlos, porque corren y se pueden lastimar, porque tienen que irse a dormir y por muchos otros motivos más.
+                <br><br>
+                Yo sé que ser hermano mayor tiene esas cosas, que ser el primero a veces deviene en ser el último, lo entiendo pero a veces no me gusta.
+                <br><br>
+                Comí esa última galletita, que por otra parte estaba riquísima, y cuando volvió mamá -además de avisarle que no había más galletitas- le conté que me había acordado de la frase de la abuela. Le dije entonces que, a veces, me sentía como esa pobre galletita que me acababa de comer.
+                <br><br>
+                -¿Cómo la última galletita de la lata?-preguntó mamá.
+                <br><br>
+                –Sí, como la última galletita de la lata-repetí yo.
+                <br><br>
+                Mamá sonrió –con algo de pena– y me abrazó.
+                <br><br>
+                No le hizo falta preguntarme por qué, lo sabía. Mamá era consciente que muchas veces no podía atender mis necesidades primero porque estaban las de mis hermanitos.
+                <br><br>
+                -Mira cielo- me dijo entonces acariciándome la cabeza- es cierto que muchas veces debo ocuparme de tus hermanitos antes que de ti, pero eso no significa que para mí seas el último.
+                <br><br>
+                Hubo un tiempo en el que sólo eras tú y mi lata estaba completa contigo, pues bien, ahora está más llena aún. Para una mamá "todas las galletitas de la lata" son las más ricas, las más bellas y las más valoradas. No importa cuál se come primero o luego, eso es sólo una circunstancia, tan sólo eso. Tampoco importa si es una o son varias, se valoran todas por igual y se "saborean" con el mismo amor.
+                <br><br>
+                La miré entendiendo perfectamente lo que me estaba queriendo decir.
+                <br><br>
+                Me tomó de la mano y me preguntó:
+                <br><br>
+                -¿Quieres ir a comprar más galletitas?
+                <br><br>
+                Fuimos y volvimos con muchas y llenamos la lata y desde ese día, no sé por qué (o tal vez sí) mamá procuró que nunca más quedara una solita.
+            </p>
+            
+                                   
+            <div id="timer">Tiempo transcurrido: <span id="timerValue">0</span> segundos</div>
+            <button id="finishButton">Terminar</button>
+        </div>
+        <div id="questionnaire" class="hidden">
+            <h2>Test de Comprensión Lectora</h2>
+            <form id="quizForm">
+                <ol id="questionList">
+                    <!-- Las preguntas se añadirán aquí dinámicamente con JavaScript -->
+                </ol>
+                <button type="submit">Terminar</button>
+            </form>
+        </div>
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div id="wordCount">Palabras leídas: <span id="wordCountValue"></span></div>
+            <div id="readingSpeed">Velocidad de lectura: <span id="readingSpeedValue"></span> palabras por minuto</div>
+            <div id="comprehension">Comprensión lectora: <span id="comprehensionValue"></span>%</div>
+            <div id="timeResult">Tiempo transcurrido: <span id="timeResultValue"></span> segundos</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
